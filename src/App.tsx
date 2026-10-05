@@ -2,6 +2,7 @@ import { useState, type ReactNode } from "react";
 
 const mobileNumber = "33370219";
 const businessWhatsApp = "77857240";
+const photoUrl = (photo: number) => `${import.meta.env.BASE_URL}dq-movers/photo-${photo}.jpg`;
 const whatsappUrl =
   "https://wa.me/97477857240?text=Hello%20DQ%20Movers%20Packers%2C%20I%20would%20like%20a%20moving%20quote.";
 const mapUrl =
@@ -223,7 +224,7 @@ function App() {
           </div>
           <div className="hero-visual">
             <BrandedPhoto
-              src="/dq-movers/photo-1.jpg"
+              src={photoUrl(1)}
               alt="DQ Movers trucks ready for a villa move in Doha"
               eager
             />
@@ -240,7 +241,7 @@ function App() {
         <div className="intro-art">
           <div className="intro-logo"><span>DQ</span><small>MOVERS PACKERS</small></div>
           <BrandedPhoto
-            src="/dq-movers/photo-2.jpg"
+            src={photoUrl(2)}
             alt="DQ team member packing moving boxes"
           />
           <div className="mini-note"><Icon name="sparkle" /><span>Clean packing.<br />Confident moving.</span></div>
@@ -302,7 +303,7 @@ function App() {
           {gallery.slice(2).map((photo) => (
             <BrandedPhoto
               key={photo.file}
-              src={`/dq-movers/photo-${photo.file}.jpg`}
+              src={photoUrl(photo.file)}
               alt={photo.alt}
               className={photo.shape}
             />
