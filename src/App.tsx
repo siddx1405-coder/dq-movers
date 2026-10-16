@@ -6,7 +6,7 @@ const photoUrl = (photo: number) => `${import.meta.env.BASE_URL}dq-movers/photo-
 const whatsappUrl =
   "https://wa.me/97477857240?text=Hello%20DQ%20Movers%20Packers%2C%20I%20would%20like%20a%20moving%20quote.";
 const mapUrl =
-  "https://www.google.com/maps/search/?api=1&query=Family+Park%2C+Muntaza%2C+Doha%2C+Qatar";
+  "https://www.google.com/maps/search/?api=1&query=Najma+souq+haraj%2C+Doha%2C+Qatar";
 
 type IconName =
   | "arrow"
@@ -347,7 +347,7 @@ function App() {
           <div className="contact-details">
             <a href={mapUrl} target="_blank" rel="noreferrer">
               <span><Icon name="location" /></span>
-              <div><small>OUR LOCATION</small><strong>Muntaza, near Family Park<br />Doha, Qatar</strong></div>
+              <div><small>OUR LOCATION</small><strong>Najma souq haraj<br />Doha, Qatar</strong></div>
             </a>
             <a href="mailto:tutul.medda@gmail.com">
               <span><Icon name="mail" /></span>
@@ -374,7 +374,7 @@ function App() {
         </div>
         <div className="section-shell footer-bottom">
           <span>© {new Date().getFullYear()} DQ Movers Packers. All rights reserved.</span>
-          <span>Muntaza • Doha • Qatar</span>
+          <span>Najma souq haraj • Doha • Qatar</span>
         </div>
       </footer>
 
